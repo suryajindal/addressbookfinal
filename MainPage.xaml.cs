@@ -215,12 +215,16 @@ namespace addressbook
 
         private void SearchAutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
-
+            TableGrid.Visibility = Visibility.Visible;
+            //CrudGrid.Visibility = Visibility.Visible;
+            ContactDataGrid.ItemsSource = contacts;
         }
 
         private void SearchAutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-
+            TableGrid.Visibility = Visibility.Visible;
+            var cont = from s in contacts where s.Name.Contains(SearchAutoSuggestBox.Text)  select s;
+            ContactDataGrid.ItemsSource = cont;
         }
 
         private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)

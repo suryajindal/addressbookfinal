@@ -179,7 +179,7 @@
                                 </controls:DataGrid.Columns>
                             </controls:DataGrid>
                         </Border>
-                        <StackPanel  Grid.Row="1" Grid.Column="1" Margin="0,250,0,20" BorderThickness="10,10,10,12">
+                        <StackPanel  Grid.Row="1" Grid.Column="1" Margin="0,250,0,20" BorderThickness="10,10,10,12" FocusVisualPrimaryBrush="#FF5CC821">
                             <TextBlock x:ConnectionId='10' x:Name="NameDetail" FontFamily="Arial" FontSize="25"/>
                             <TextBlock x:ConnectionId='11' x:Name="AddressDetail" TextWrapping="WrapWholeWords"/>
                             <TextBlock x:ConnectionId='12' x:Name="Phone1Detail"/>

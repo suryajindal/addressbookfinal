@@ -66,6 +66,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
