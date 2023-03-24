@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nl7WdndYt6jXC35XkvsTzc5+mmV1RjH4XV1tyI6Y2H39sZzzg4n+fjz3XtyIKNi/Hcnjfj3JHNQnaLJ12jZwtg==",
+  "dgSpecHash": "5GThmr3TP+4Zm4PCdp9BXUJpHQ1m271yLchZg3x6ugS7lk/ReFmAc4gSBaw7KpKyI4QeOzjYNQf+wTfqmey/FA==",
   "success": true,
-  "projectFilePath": "C:\\git\\suryaboot\\bootcamp\\addressbook\\addressbook.csproj",
+  "projectFilePath": "C:\\git\\addressbookfinal\\addressbook.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

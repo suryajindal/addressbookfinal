@@ -1,1 +1,1 @@
-C:\git\suryaboot\bootcamp\addressbook\addressbook.csproj;x86
+C:\git\addressbookfinal\addressbook.csproj;x86

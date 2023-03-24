@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\suryaboot\\bootcamp\\addressbook\\addressbook.csproj": {}
+    "C:\\git\\addressbookfinal\\addressbook.csproj": {}
   },
   "projects": {
-    "C:\\git\\suryaboot\\bootcamp\\addressbook\\addressbook.csproj": {
+    "C:\\git\\addressbookfinal\\addressbook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\suryaboot\\bootcamp\\addressbook\\addressbook.csproj",
+        "projectUniqueName": "C:\\git\\addressbookfinal\\addressbook.csproj",
         "projectName": "addressbook",
-        "projectPath": "C:\\git\\suryaboot\\bootcamp\\addressbook\\addressbook.csproj",
+        "projectPath": "C:\\git\\addressbookfinal\\addressbook.csproj",
         "packagesPath": "C:\\Users\\surya\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\suryaboot\\bootcamp\\addressbook\\obj\\",
+        "outputPath": "C:\\git\\addressbookfinal\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
