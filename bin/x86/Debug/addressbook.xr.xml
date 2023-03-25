@@ -108,6 +108,7 @@
       <RootProperty Name="HeadersVisibility" />
       <RootProperty Name="CanUserResizeColumns" />
       <RootProperty Name="CanUserReorderColumns" />
+      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="HorizontalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="ItemsSource" />

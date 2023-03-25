@@ -1,4 +1,5 @@
 ﻿using addressbook.Models;
+using Microsoft.Toolkit.Uwp.UI.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -170,27 +171,33 @@ namespace addressbook
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
-            ClearTextbox();
             CrudGrid.Visibility = Visibility.Visible;
             TableGrid.Visibility = Visibility.Collapsed;
+            ContactDataGrid.SelectedItem = null;
+            MenuItemsListView.SelectedItem = null;
+            ClearTextbox();
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
-            GetToHome();
+            ContactManager.GetAllContacts(contacts);
+            MenuItemsListView.SelectedItem = null;
+            CrudGrid.Visibility = Visibility.Collapsed;
+            TableGrid.Visibility = Visibility.Visible;
+            ClearTextblock();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             TableGrid.Visibility = Visibility.Visible;
             CrudGrid.Visibility = Visibility.Collapsed;
+            ClearTextblock();
             var selectedItem = ContactDataGrid.SelectedItem as Contact;
             if (selectedItem != null)
             {
                 ContactManager.DeleteContact(contacts, selectedItem);
 
             }
-            ClearTextblock();
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
@@ -201,11 +208,15 @@ namespace addressbook
             if (selectedItem != null)
             {
                 Name.Text = selectedItem.Name;
-                //AddressLine1.Text = selectedItem.MailingAddress.AddressLine1.ToString() == null ? "Enter Address Line 1" : selectedItem.MailingAddress.AddressLine1.ToString();
-                //AddressLine2.Text = selectedItem.MailingAddress.AddressLine2.ToString() == null ? "Enter Address Line2" : selectedItem.MailingAddress.AddressLine2.ToString();
-                //City.Text = selectedItem.MailingAddress.City.ToString() == null ? "Enter City" : selectedItem.MailingAddress.City.ToString();
-                //State.Text = selectedItem.MailingAddress.State.ToString() == null ? "Enter State" : selectedItem.MailingAddress.State.ToString();
-                //Zip.Text = selectedItem.MailingAddress.ZipCode.ToString() == null ? "Enter Zip" : selectedItem.MailingAddress.ZipCode.ToString();
+                if (selectedItem.MailingAddress != null)
+                {
+                    AddressLine1.Text = selectedItem.MailingAddress.AddressLine1 != null ? selectedItem.MailingAddress.AddressLine1 : string.Empty;
+                    AddressLine2.Text = selectedItem.MailingAddress.AddressLine2 != null ? selectedItem.MailingAddress.AddressLine2 : string.Empty;
+                    City.Text = selectedItem.MailingAddress.City != null ? selectedItem.MailingAddress.City : string.Empty;
+                    State.Text = selectedItem.MailingAddress.State != null ? selectedItem.MailingAddress.State : string.Empty;
+                    Zip.Text = selectedItem.MailingAddress.ZipCode != null ? selectedItem.MailingAddress.ZipCode : string.Empty;
+                }
+
                 Mobile.Text = selectedItem.Phone1 == null ? "Enter Mobile Number" : selectedItem.Phone1;
                 Home.Text = selectedItem.Phone2 == null ? "Enter LandLine Number" : selectedItem.Phone2;
                 Email.Text = selectedItem.Email == null ? "Enter Email" : selectedItem.Email;
@@ -226,6 +237,7 @@ namespace addressbook
         private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             ClearTextbox();
+            ClearTextblock();
             var menuItem = (MenuItem)e.ClickedItem;
             ContactManager.GetContactsByAlphabet(contacts, menuItem.FirstAlphabet);
             //AlphabetTextBlock.Text = menuItem.FirstAlphabet.ToString();
@@ -262,8 +274,8 @@ namespace addressbook
 
                 NameDetail.Text = selectedItem.Name;
                 AddressDetail.Text = selectedItem.MailingAddress.ToString() == null ? "Address:" : $"Address: {selectedItem.MailingAddress.ToString()}";
-                Phone1Detail.Text = selectedItem.Phone1 == null ? $"Phone1:" : $"Phone1: {selectedItem.Phone1}";
-                Phone2Detail.Text = selectedItem.Phone2 == null ? "Phone2:" : $"Phone2: {selectedItem.Phone2}";
+                Phone1Detail.Text = selectedItem.Phone1 == null ? $"Mobile:" : $"Mobile: {selectedItem.Phone1}";
+                Phone2Detail.Text = selectedItem.Phone2 == null ? "Home:" : $"Home: {selectedItem.Phone2}";
                 EmailDetail.Text = selectedItem.Email == null ? "Email:" : $"Email: {selectedItem.Email}";
                 UrlDetail.Text = selectedItem.Url == null ? "Url:" : $"Url: {selectedItem.Url}";
             }
@@ -290,8 +302,30 @@ namespace addressbook
 
             ContactManager.AddOrUpdateContact(contacts, c);
 
-            ClearTextblock();
-            ClearTextbox();
+            //ClearTextblock();
+            //ClearTextbox();
+            //GetToHome();
+            if(TableGrid.Visibility == Visibility.Collapsed)
+            {
+                TableGrid.Visibility = Visibility.Visible;
+                ContactDataGrid.SelectedItem = contacts.Last();    
+            }
+            else
+            {
+                if(MenuItemsListView.SelectedItem == null)
+                {
+                    ContactDataGrid.SelectedItem = from contact in contacts
+                                                   where contact.Id == id
+                                                   select contact;
+                }
+                else
+                {
+                    var menuItem = (MenuItem)MenuItemsListView.SelectedItem;
+                    ContactManager.GetContactsByAlphabet(contacts, menuItem.FirstAlphabet);
+                }
+                ClearTextblock();
+                ClearTextbox();
+            }
         }
 
         private void ClearBtn_Click(object sender, RoutedEventArgs e)
@@ -301,7 +335,7 @@ namespace addressbook
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (ContactDataGrid.Visibility == Visibility.Collapsed)
+            if (TableGrid.Visibility == Visibility.Collapsed)
             {
                 GetToHome();
             }
@@ -331,6 +365,7 @@ namespace addressbook
 
         private void ClearTextbox()
         {
+            //ContactDataGrid.SelectedItem = null;
             Name.Text = string.Empty;
             Mobile.Text = string.Empty;
             Home.Text = string.Empty;

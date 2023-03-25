@@ -141,7 +141,7 @@
                                        HeadersVisibility="All"
                                        CanUserResizeColumns="True"
                                        CanUserReorderColumns="True"
-                                       
+                                       IsReadOnly="True"
                                        HorizontalScrollBarVisibility="Visible"
                                        VerticalScrollBarVisibility="Visible"
                                        ItemsSource="{x:Bind contacts}"
@@ -162,7 +162,7 @@
                                                 Binding="{Binding Name}"
                                                 FontSize="15"/>
                                     <controls:DataGridTextColumn
-                                                Header="Phone1"
+                                                Header="Mobile"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Phone1}"
                                                 FontSize="15"/>
