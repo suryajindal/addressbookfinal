@@ -1,4 +1,3 @@
-WinMetadata\Windows.winmd
 Assets\Icons\icons8-a-50.png
 Assets\Icons\icons8-b-50.png
 Assets\Icons\icons8-c-50.png
@@ -41,3 +40,4 @@ App.xbf
 MainPage.xbf
 Test.xbf
 Properties\Default.rd.xml
+WinMetadata\Windows.winmd

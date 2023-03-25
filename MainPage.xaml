@@ -134,7 +134,7 @@
                         <Border  BorderThickness="10" Visibility="Visible" Grid.Row="1" Grid.Column="0">
                             <controls:DataGrid Grid.Row="1" Grid.Column="0"
                                        x:Name="ContactDataGrid"
-                                       Height="600"
+                                       Height="Auto"
                                        AutoGenerateColumns="False"
                                        Margin="20"
                                        AlternatingRowBackground="LightGray"
