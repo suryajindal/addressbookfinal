@@ -65,7 +65,7 @@ namespace addressbook
             {
                 //Test change from Rucku
                 IconFile = "Assets/Icons/icons8-e-50.png",
-                FirstAlphabet = Alphabet.F
+                FirstAlphabet = Alphabet.E
             });
             menuItems.Add(new MenuItem
             {
