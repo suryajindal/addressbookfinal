@@ -179,7 +179,9 @@
                                                 FontSize="15"/>
                                     </controls:DataGrid.Columns>
                                 </controls:DataGrid>
-                                <StackPanel  Grid.Row="1" Grid.Column="1" BorderThickness="10,10,10,12" FocusVisualPrimaryBrush="#FF5CC821" RelativePanel.RightOf="ContactDataGrid" Margin="50,10,0,0">
+                                <StackPanel  Grid.Row="1" Grid.Column="1" BorderThickness="10,10,10,12" 
+                                             FocusVisualPrimaryBrush="#FF5CC821" RelativePanel.AlignRightWithPanel="True" 
+                                             RelativePanel.RightOf="ContactDataGrid" Margin="20,10,20,0">
                                     <TextBlock x:Name="NameDetail" FontFamily="Arial" FontSize="25"/>
                                     <TextBlock x:Name="AddressDetail" TextWrapping="WrapWholeWords"/>
                                     <TextBlock x:Name="Phone1Detail"/>
