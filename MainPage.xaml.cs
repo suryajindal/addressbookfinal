@@ -194,11 +194,17 @@ namespace addressbook
             TableGrid.Visibility = Visibility.Visible;
             CrudGrid.Visibility = Visibility.Collapsed;
             ClearTextblock();
+            ClearTextbox();
             var selectedItem = ContactDataGrid.SelectedItem as Contact;
             if (selectedItem != null)
             {
                 ContactManager.DeleteContact(contacts, selectedItem);
 
+            }
+            if (MenuItemsListView.SelectedItem != null)
+            {
+                var menuItem = (MenuItem)MenuItemsListView.SelectedItem;
+                ContactManager.GetContactsByAlphabet(contacts, menuItem.FirstAlphabet);
             }
         }
 
