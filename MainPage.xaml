@@ -131,8 +131,9 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Border  BorderThickness="10" Visibility="Visible" Grid.Row="1" Grid.Column="0">
-                            <controls:DataGrid Grid.Row="1" Grid.Column="0"
+                        <Border  BorderThickness="100" Visibility="Visible" Grid.Row="1" Grid.Column="0">
+                            <RelativePanel Grid.Row="1" Grid.Column="0">
+                                <controls:DataGrid Grid.Row="1" Grid.Column="0"
                                        x:Name="ContactDataGrid"
                                        Height="Auto"
                                        AutoGenerateColumns="False"
@@ -149,44 +150,45 @@
                                        ScrollViewer.HorizontalScrollBarVisibility="Visible" 
                                        SelectionMode="Single" 
                                        SelectionChanged="ContactDataGrid_SelectionChanged">
-                                <controls:DataGrid.VerticalGridLinesBrush>
-                                    <SolidColorBrush Color="#66150A0A" Opacity="0.4"/>
-                                </controls:DataGrid.VerticalGridLinesBrush>
-                                <controls:DataGrid.HorizontalGridLinesBrush>
-                                    <SolidColorBrush Color="#66100707" Opacity="0.4"/>
-                                </controls:DataGrid.HorizontalGridLinesBrush>
-                                <controls:DataGrid.Columns>
-                                    <controls:DataGridTextColumn
+                                    <controls:DataGrid.VerticalGridLinesBrush>
+                                        <SolidColorBrush Color="#66150A0A" Opacity="0.4"/>
+                                    </controls:DataGrid.VerticalGridLinesBrush>
+                                    <controls:DataGrid.HorizontalGridLinesBrush>
+                                        <SolidColorBrush Color="#66100707" Opacity="0.4"/>
+                                    </controls:DataGrid.HorizontalGridLinesBrush>
+                                    <controls:DataGrid.Columns>
+                                        <controls:DataGridTextColumn
                                                 Header="Name"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Name}"
                                                 FontSize="15"/>
-                                    <controls:DataGridTextColumn
+                                        <controls:DataGridTextColumn
                                                 Header="Mobile"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Phone1}"
                                                 FontSize="15"/>
-                                    <controls:DataGridTextColumn
+                                        <controls:DataGridTextColumn
                                                 Header="Address"
                                                 Width="SizeToCells"
                                                 Binding="{Binding MailingAddress}"
                                                 FontSize="15"/>
-                                    <controls:DataGridTextColumn
+                                        <controls:DataGridTextColumn
                                                 Header="Email"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Email}"
                                                 FontSize="15"/>
-                                </controls:DataGrid.Columns>
-                            </controls:DataGrid>
+                                    </controls:DataGrid.Columns>
+                                </controls:DataGrid>
+                                <StackPanel  Grid.Row="1" Grid.Column="1" BorderThickness="10,10,10,12" FocusVisualPrimaryBrush="#FF5CC821" RelativePanel.RightOf="ContactDataGrid" Margin="50,10,0,0">
+                                    <TextBlock x:Name="NameDetail" FontFamily="Arial" FontSize="25"/>
+                                    <TextBlock x:Name="AddressDetail" TextWrapping="WrapWholeWords"/>
+                                    <TextBlock x:Name="Phone1Detail"/>
+                                    <TextBlock x:Name="Phone2Detail"/>
+                                    <TextBlock x:Name="EmailDetail"/>
+                                    <TextBlock x:Name="UrlDetail" TextWrapping="WrapWholeWords"/>
+                                </StackPanel>
+                            </RelativePanel>
                         </Border>
-                        <StackPanel  Grid.Row="1" Grid.Column="1" Margin="0,250,0,20" BorderThickness="10,10,10,12" FocusVisualPrimaryBrush="#FF5CC821">
-                            <TextBlock x:Name="NameDetail" FontFamily="Arial" FontSize="25"/>
-                            <TextBlock x:Name="AddressDetail" TextWrapping="WrapWholeWords"/>
-                            <TextBlock x:Name="Phone1Detail"/>
-                            <TextBlock x:Name="Phone2Detail"/>
-                            <TextBlock x:Name="EmailDetail"/>
-                            <TextBlock x:Name="UrlDetail" TextWrapping="WrapWholeWords"/>
-                        </StackPanel>
                     </Grid>
                 </Grid>
             </SplitView.Content>
