@@ -10,7 +10,7 @@
 
         static ContactManager()
         {
-            //PopulateSampleData();
+            PopulateSampleData();
         }
 
         public static void GetAllContacts(ObservableCollection<Contact> contacts)
