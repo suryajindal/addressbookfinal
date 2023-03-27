@@ -10,7 +10,21 @@
     xmlns:data ="using:addressbook.Models"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Visibility="Visible">
+    <Grid x:Name="Master_View" Visibility="Visible">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+
+                    <VisualState.Setters>
+                        <Setter Target="TableGrid.displaymode" Value="Inline"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -68,7 +82,7 @@
         <SplitView Grid.Row="1" Background="Beige"
                    Name="ContentSplitView"
                    IsPaneOpen="True"
-                   OpenPaneLength="45"
+                   OpenPaneLength="35"
                    DisplayMode="Inline">
             <SplitView.Pane>
                 <ListView Name="MenuItemsListView"
@@ -87,46 +101,46 @@
                 </ListView>
             </SplitView.Pane>
             <SplitView.Content>
-                <Grid>
+                <Grid Margin="0,0,10,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
                     <Grid Name ="CrudGrid" Margin="20,0,0,0" Grid.Row="0">
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="29,15,0,0" Name="textBlock1" Text="NAME:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="28,55,0,0" Name="textBlock2" Text="HOME:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="20,95,0,0" Name="textBlock3" Text="MOBILE:" VerticalAlignment="Top" RenderTransformOrigin="0.337,-0.391" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="23,135,0,0" Name="textBlock4" Text="E-MAIL:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="311,15,0,0" Name="textBlock5" Text="ADDRESS LINE1:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="311,55,0,0" Name="textBlock6" Text="ADDRESS LINE2:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="381,95,0,0" Name="textBlock7" Text="CITY:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="374,135,0,0" Name="textBlock8" Text="STATE:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="500,135,0,0" Name="textBlock9" Text="ZIP:" VerticalAlignment="Top" />
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="655,12,0,0" Name="textBlock10" Text="URL:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="29,15,0,0" Name="textBlock1" Text="NAME:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="28,55,0,0" Name="textBlock2" Text="HOME:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="20,95,0,0" Name="textBlock3" Text="MOBILE:" VerticalAlignment="Top" RenderTransformOrigin="0.337,-0.391" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="23,135,0,0" Name="textBlock4" Text="E-MAIL:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="311,15,0,0" Name="textBlock5" Text="ADDRESS LINE1:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="311,55,0,0" Name="textBlock6" Text="ADDRESS LINE2:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="381,95,0,0" Name="textBlock7" Text="CITY:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="374,135,0,0" Name="textBlock8" Text="STATE:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="500,135,0,0" Name="textBlock9" Text="ZIP:" VerticalAlignment="Top" />
+                        <TextBlock Height="auto" HorizontalAlignment="Left" Margin="655,12,0,0" Name="textBlock10" Text="URL:" VerticalAlignment="Top" />
 
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="79,12,0,0" Name="Name" VerticalAlignment="Top" Width="220" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="79,52,10,0" Name="Home" VerticalAlignment="Top" Width="220" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="79,92,10,0" Name="Mobile" VerticalAlignment="Top" Width="220" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="79,132,0,0" Name="Email" VerticalAlignment="Top" Width="220" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="417,12,10,0" Name="AddressLine1" VerticalAlignment="Top" Width="220" TextWrapping="Wrap" AcceptsReturn="True"/>
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="417,52,10,0" Name="AddressLine2" VerticalAlignment="Top" Width="220" TextWrapping="Wrap" AcceptsReturn="True"/>
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="417,92,10,0" Name="City" VerticalAlignment="Top" Width="177" TextWrapping="Wrap" AcceptsReturn="True"/>
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="417,132,10,0" Name="State" VerticalAlignment="Top" Width="75" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="530,132,10,0" Name="Zip" VerticalAlignment="Top" Width="75" />
-                        <TextBox Height="30" HorizontalAlignment="Left" Margin="690,12,0,0" Name="Url" VerticalAlignment="Top" Width="220" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="79,12,0,0" Name="Name" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="79,52,10,0" Name="Home" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="79,92,10,0" Name="Mobile" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="79,132,0,0" Name="Email" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="417,12,10,0" Name="AddressLine1" VerticalAlignment="Top" Width="auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="417,52,10,0" Name="AddressLine2" VerticalAlignment="Top" Width="auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="417,92,10,0" Name="City" VerticalAlignment="Top" Width="auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="417,132,10,0" Name="State" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="530,132,10,0" Name="Zip" VerticalAlignment="Top" Width="auto" />
+                        <TextBox Height="auto" HorizontalAlignment="Left" Margin="690,12,0,0" Name="Url" VerticalAlignment="Top" Width="auto" />
 
 
-                        <Button Content="SAVE" Height="45" HorizontalAlignment="Left" Margin="1000,12,0,0" Name="SaveBtn" VerticalAlignment="Top" Width="75" Click="SaveBtn_Click"/>
-                        <Button Content="CLOSE" Height="45" HorizontalAlignment="Left" Margin="1000,72,0,0" Name="CloseBtn" VerticalAlignment="Top" Width="75" Click="CloseBtn_Click"/>
-                        <Button Content="CLEAR" Height="45" HorizontalAlignment="Left" Margin="1000,132,0,0" Name="ClearBtn" VerticalAlignment="Top" Width="75" Click ="ClearBtn_Click"/>
+                        <Button Content="SAVE" Height="auto" HorizontalAlignment="Left" Margin="1000,12,0,0" Name="SaveBtn" VerticalAlignment="Top" Width="auto" Click="SaveBtn_Click"/>
+                        <Button Content="CLOSE" Height="auto" HorizontalAlignment="Left" Margin="1000,72,0,0" Name="CloseBtn" VerticalAlignment="Top" Width="auto" Click="CloseBtn_Click"/>
+                        <Button Content="CLEAR" Height="auto" HorizontalAlignment="Left" Margin="1000,132,0,0" Name="ClearBtn" VerticalAlignment="Top" Width="auto" Click ="ClearBtn_Click"/>
 
                     </Grid>
 
-                    <TextBlock Grid.Row="0" Height="23" HorizontalAlignment="Left" Margin="29,175,0,0" Name="Error" FontSize="15" VerticalAlignment="Top" Visibility="Collapsed" />
+                    <TextBlock Grid.Row="0" Height="auto" HorizontalAlignment="Left" Margin="29,175,0,0" Name="Error" FontSize="15" VerticalAlignment="Top" Visibility="Collapsed" />
 
 
-                    <Grid Name ="TableGrid" Margin="20,0,0,0" Grid.Row="1">
+                    <Grid Name ="TableGrid" Margin="0,0,0,0" Grid.Row="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
@@ -135,7 +149,11 @@
                             <RelativePanel Grid.Row="1" Grid.Column="0">
                                 <controls:DataGrid Grid.Row="1" Grid.Column="0"
                                        x:Name="ContactDataGrid"
+<<<<<<< HEAD
+                                       Height="auto"
+=======
                                        Height="Auto"
+>>>>>>> main
                                        AutoGenerateColumns="False"
                                        Margin="20"
                                        AlternatingRowBackground="LightGray"
@@ -161,7 +179,11 @@
                                                 Header="Name"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Name}"
+<<<<<<< HEAD
+                                                FontSize="10"/>
+=======
                                                 FontSize="15"/>
+>>>>>>> main
                                         <controls:DataGridTextColumn
                                                 Header="Mobile"
                                                 Width="SizeToCells"

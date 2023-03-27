@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MONIKALP</Machine>
+    <WindowsUser>rucks</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
+    <PackageIdentityName>9f7e76ae-9b1d-444b-a4a4-97d4249e0404</PackageIdentityName>
+    <PackageIdentityPublisher>CN=surya</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\github\SDBootcamp\AddressBookFinal\obj\ARM\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\addressbook.exe">
+      <PackagePath>entrypoint\addressbook.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rucks\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-arm\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22000.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rucks\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-a-50.png">
+      <PackagePath>Assets\Icons\icons8-a-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-b-50.png">
+      <PackagePath>Assets\Icons\icons8-b-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-c-50.png">
+      <PackagePath>Assets\Icons\icons8-c-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-d-50.png">
+      <PackagePath>Assets\Icons\icons8-d-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-e-50.png">
+      <PackagePath>Assets\Icons\icons8-e-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-f-50.png">
+      <PackagePath>Assets\Icons\icons8-f-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-g-50.png">
+      <PackagePath>Assets\Icons\icons8-g-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-h-50.png">
+      <PackagePath>Assets\Icons\icons8-h-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-i-50.png">
+      <PackagePath>Assets\Icons\icons8-i-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-j-50.png">
+      <PackagePath>Assets\Icons\icons8-j-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-k-50.png">
+      <PackagePath>Assets\Icons\icons8-k-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-l-50.png">
+      <PackagePath>Assets\Icons\icons8-l-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-m-50.png">
+      <PackagePath>Assets\Icons\icons8-m-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-n-50.png">
+      <PackagePath>Assets\Icons\icons8-n-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-o-50.png">
+      <PackagePath>Assets\Icons\icons8-o-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-p-50.png">
+      <PackagePath>Assets\Icons\icons8-p-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-q-50.png">
+      <PackagePath>Assets\Icons\icons8-q-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-r-50.png">
+      <PackagePath>Assets\Icons\icons8-r-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-s-50.png">
+      <PackagePath>Assets\Icons\icons8-s-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-t-50.png">
+      <PackagePath>Assets\Icons\icons8-t-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-u-26.png">
+      <PackagePath>Assets\Icons\icons8-u-26.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-v-50.png">
+      <PackagePath>Assets\Icons\icons8-v-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-w-50.png">
+      <PackagePath>Assets\Icons\icons8-w-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-x-50.png">
+      <PackagePath>Assets\Icons\icons8-x-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-y-50.png">
+      <PackagePath>Assets\Icons\icons8-y-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Icons\icons8-z-50.png">
+      <PackagePath>Assets\Icons\icons8-z-50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\icons8-edit-48.png">
+      <PackagePath>Assets\Images\icons8-edit-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\icons8-home-48.png">
+      <PackagePath>Assets\Images\icons8-home-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\icons8-plus-48.png">
+      <PackagePath>Assets\Images\icons8-plus-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\icons8-trash-48.png">
+      <PackagePath>Assets\Images\icons8-trash-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\SplashScreen.scale-200.png">
+      <PackagePath>Assets\Images\SplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Images\Square150x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Images\Square44x44Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\StoreLogo.png">
+      <PackagePath>Assets\Images\StoreLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Assets\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Images\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\addressbook.xr.xml">
+      <PackagePath>addressbook.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\Test.xbf">
+      <PackagePath>Test.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\arm\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\SDBootcamp\AddressBookFinal\bin\ARM\Debug\Core\addressbook.exe">
+      <PackagePath>addressbook.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\rucks\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

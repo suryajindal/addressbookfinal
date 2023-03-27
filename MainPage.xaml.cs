@@ -64,8 +64,13 @@ namespace addressbook
             menuItems.Add(new MenuItem
             {
                 //Test change from Rucku
+<<<<<<< HEAD
+                IconFile = "Assets/Icons/icons8-e-50.png",
+                FirstAlphabet = Alphabet.E
+=======
                 IconFile = "Assets/Icons/icons8-f-50.png",
                 FirstAlphabet = Alphabet.F
+>>>>>>> main
             });
             menuItems.Add(new MenuItem
             {
