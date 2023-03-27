@@ -145,10 +145,15 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Border  BorderThickness="10" Visibility="Visible" Grid.Row="1" Grid.Column="0">
-                            <controls:DataGrid Grid.Row="1" Grid.Column="0"
+                        <Border  BorderThickness="100" Visibility="Visible" Grid.Row="1" Grid.Column="0">
+                            <RelativePanel Grid.Row="1" Grid.Column="0">
+                                <controls:DataGrid Grid.Row="1" Grid.Column="0"
                                        x:Name="ContactDataGrid"
+<<<<<<< HEAD
                                        Height="auto"
+=======
+                                       Height="Auto"
+>>>>>>> main
                                        AutoGenerateColumns="False"
                                        Margin="20"
                                        AlternatingRowBackground="LightGray"
@@ -163,18 +168,22 @@
                                        ScrollViewer.HorizontalScrollBarVisibility="Visible" 
                                        SelectionMode="Single" 
                                        SelectionChanged="ContactDataGrid_SelectionChanged">
-                                <controls:DataGrid.VerticalGridLinesBrush>
-                                    <SolidColorBrush Color="#66150A0A" Opacity="0.4"/>
-                                </controls:DataGrid.VerticalGridLinesBrush>
-                                <controls:DataGrid.HorizontalGridLinesBrush>
-                                    <SolidColorBrush Color="#66100707" Opacity="0.4"/>
-                                </controls:DataGrid.HorizontalGridLinesBrush>
-                                <controls:DataGrid.Columns>
-                                    <controls:DataGridTextColumn
+                                    <controls:DataGrid.VerticalGridLinesBrush>
+                                        <SolidColorBrush Color="#66150A0A" Opacity="0.4"/>
+                                    </controls:DataGrid.VerticalGridLinesBrush>
+                                    <controls:DataGrid.HorizontalGridLinesBrush>
+                                        <SolidColorBrush Color="#66100707" Opacity="0.4"/>
+                                    </controls:DataGrid.HorizontalGridLinesBrush>
+                                    <controls:DataGrid.Columns>
+                                        <controls:DataGridTextColumn
                                                 Header="Name"
                                                 Width="SizeToCells"
                                                 Binding="{Binding Name}"
+<<<<<<< HEAD
                                                 FontSize="10"/>
+=======
+                                                FontSize="15"/>
+>>>>>>> main
                                         <controls:DataGridTextColumn
                                                 Header="Mobile"
                                                 Width="SizeToCells"

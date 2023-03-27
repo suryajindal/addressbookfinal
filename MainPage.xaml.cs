@@ -64,8 +64,13 @@ namespace addressbook
             menuItems.Add(new MenuItem
             {
                 //Test change from Rucku
+<<<<<<< HEAD
                 IconFile = "Assets/Icons/icons8-e-50.png",
                 FirstAlphabet = Alphabet.E
+=======
+                IconFile = "Assets/Icons/icons8-f-50.png",
+                FirstAlphabet = Alphabet.F
+>>>>>>> main
             });
             menuItems.Add(new MenuItem
             {
@@ -186,6 +191,7 @@ namespace addressbook
             CrudGrid.Visibility = Visibility.Collapsed;
             TableGrid.Visibility = Visibility.Visible;
             ClearTextblock();
+            
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -193,11 +199,17 @@ namespace addressbook
             TableGrid.Visibility = Visibility.Visible;
             CrudGrid.Visibility = Visibility.Collapsed;
             ClearTextblock();
+            ClearTextbox();
             var selectedItem = ContactDataGrid.SelectedItem as Contact;
             if (selectedItem != null)
             {
                 ContactManager.DeleteContact(contacts, selectedItem);
 
+            }
+            if (MenuItemsListView.SelectedItem != null)
+            {
+                var menuItem = (MenuItem)MenuItemsListView.SelectedItem;
+                ContactManager.GetContactsByAlphabet(contacts, menuItem.FirstAlphabet);
             }
         }
 
@@ -228,14 +240,14 @@ namespace addressbook
         private void SearchAutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
             TableGrid.Visibility = Visibility.Visible;
-            //CrudGrid.Visibility = Visibility.Visible;
-            ContactDataGrid.ItemsSource = contacts;
+            //CrudGrid.Visibility = Visibility.Visible;
+            ContactDataGrid.ItemsSource = contacts;
         }
 
         private void SearchAutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
             TableGrid.Visibility = Visibility.Visible;
-            var cont = from s in contacts where s.Name.Contains(SearchAutoSuggestBox.Text)  select s;
+            var cont = from s in contacts where s.Name.Contains(SearchAutoSuggestBox.Text) select s;
             ContactDataGrid.ItemsSource = cont;
         }
 
