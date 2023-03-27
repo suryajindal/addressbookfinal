@@ -1,0 +1,1 @@
+C:\github\SDBootcamp\AddressBookFinal\addressbook.csproj;arm
